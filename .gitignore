@@ -1,0 +1,5 @@
+*.out
+*.vcd
+*.gtkw
+*.log
+iverilog

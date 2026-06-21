@@ -1,0 +1,37 @@
+# Read RTL
+
+read_verilog rtl/smart_home_controller.v
+
+# Top module
+
+hierarchy -check -top smart_home_controller
+
+# Generic synthesis
+
+proc
+opt
+
+fsm
+opt
+
+memory
+opt
+
+techmap
+opt
+
+# Map logic
+
+abc
+
+# Cleanup
+
+clean
+
+# Statistics
+
+stat
+
+# Generate synthesized netlist
+
+write_verilog reports/smart_home_controller_netlist.v
